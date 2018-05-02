@@ -7,7 +7,7 @@
   "language":"nodejs",
   "license": "",
   "scripts": {
-     "start": "node experimental.js"
+     "start": "sudo node experimental.js"
     }
 }
 
