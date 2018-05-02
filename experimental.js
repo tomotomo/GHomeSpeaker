@@ -1,4 +1,4 @@
-//isaax app for GHome
+//isaax app for GHome speak
 
 var googlehome = require('./google-home-notifier');
 var deviceName = 'Google Home';
