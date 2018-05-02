@@ -1,0 +1,13 @@
+{
+  "name": "nodejs-app",
+  "version": "Nothing test",
+  "description": "python - raspberry-pi",
+  "main": "examples/test.py",
+  "author": "",
+  "language":"nodejs",
+  "license": "",
+  "scripts": {
+     "start": "node experimental.js"
+    }
+}
+
