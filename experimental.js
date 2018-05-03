@@ -24,10 +24,9 @@ googlehome.device(deviceName,language);
 
 const morning = process.env.MORNING || null
 
-//console.log(time);
 
 function timer (eventtime,text) {
-console.log(eventtime);
+console.log(eventtime +'trigger time');
 var dt = new Date();
 var time = dt.toFormat("HH24MI");
 if ( time == eventtime ) {
@@ -42,9 +41,9 @@ if ( time == eventtime ) {
                             console.log(time+'No Hit!');}
                                 }
 
-setInterval(function(){timer(1448,text1)},5000);
-setInterval(function(){timer(1450,text2)},5000);
-setInterval(function(){timer(1452,text3)},5000);
+setInterval(function(){timer(1000,text1)},5000);
+setInterval(function(){timer(1230,text2)},5000);
+setInterval(function(){timer(1830,text3)},5000);
 
 
 //次回はイベントの発動時刻とイベント文面を引数で渡せるようにする。
