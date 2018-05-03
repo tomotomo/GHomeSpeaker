@@ -30,10 +30,10 @@ function timer (eventtime) {
 console.log(eventtime);
 var dt = new Date();
 var time = dt.toFormat("HH24MI");
-if ( time == 2310 ) {
+if ( time == 1215 ) {
     googlehome.ip(ip, language);
         googlehome.device(deviceName,language);
-            googlehome.notify(text3, function(notifyRes) {
+            googlehome.notify(text2, function(notifyRes) {
                     console.log(notifyRes);
                     sleep.sleep(20)
                         })
