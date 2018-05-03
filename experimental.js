@@ -12,11 +12,11 @@ require('date-utils');
 
 
 
-text1="おはようございます。私はGoogle Homeです。何か困ったことがあったらOK Googleと言って私に話しかけてください。"
+text1="おはようございます。私はGoogle Homeです。何か困ったことがあったらOK Googleと言って私に話しかけてください。それではどうぞ良い一日を"
 
-text2="こんにちは私はGoogle Homeです。お昼の薬はのみましたか？何か困ったことがあったらOK Googleと言って私に話しかけてください"
+text2="こんにちは。私はGoogle Homeです。お昼の薬はのみましたか？何か困ったことがあったらOK Googleと言って私に話しかけてください"
 
-text3="こんにちは私はGoogle Homeです。おばあちゃま。夕食後の薬は飲みましたか？何か困ったことがあったらOK Googleと言って私に話しかけてください"
+text3="こんばんわ。私はGoogle Homeです。ななみによって、私はカスタムされました。夕食の薬は飲みましたか？何か困ったことがあったらOK Googleと言って私に話しかけてください"
 
 googlehome.ip(ip, language);
 googlehome.device(deviceName,language);
@@ -26,24 +26,25 @@ const morning = process.env.MORNING || null
 
 //console.log(time);
 
-function timer (eventtime) {
+function timer (eventtime,text) {
 console.log(eventtime);
 var dt = new Date();
 var time = dt.toFormat("HH24MI");
-if ( time == 1215 ) {
+if ( time == eventtime ) {
     googlehome.ip(ip, language);
         googlehome.device(deviceName,language);
-            googlehome.notify(text2, function(notifyRes) {
+            googlehome.notify(text, function(notifyRes) {
                     console.log(notifyRes);
+                    console.log(time+'Hit!')
                     sleep.sleep(20)
                         })
                         } else { 
-                            console.log(time);
-                            console.log("no matching")
-                                }
+                            console.log(time+'No Hit!');}
                                 }
 
+setInterval(function(){timer(1448,text1)},5000);
+setInterval(function(){timer(1450,text2)},5000);
+setInterval(function(){timer(1452,text3)},5000);
 
-setInterval(timer,2000);
 
 //次回はイベントの発動時刻とイベント文面を引数で渡せるようにする。
