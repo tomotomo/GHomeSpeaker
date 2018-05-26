@@ -10,13 +10,15 @@ require('date-utils');
 //var dt = new Date();
 //var time = dt.toFormat("HH24MI");
 
+//function(){timer(1000,text4)},5000);
 
+text1="おはようございます。おばあちゃま。私はGoogle Homeです。何か困ったことがあったらOK Googleと言って私に話しかけてください。それではどうぞ良い一日を"
 
-text1="おはようございます。私はGoogle Homeです。何か困ったことがあったらOK Googleと言って私に話しかけてください。それではどうぞ良い一日を"
+text2="こんにちは。私はGoogle Homeです。お昼の薬はのみましたか？何か困ったことがあったらOK Googleと言って私に話しかけてください。おそれることはありません。勇気をもって取り組みましょう。おじいちゃまは私たちみんな極楽浄土から見守ってくれています。"
 
-text2="こんにちは。私はGoogle Homeです。お昼の薬はのみましたか？何か困ったことがあったらOK Googleと言って私に話しかけてください"
+text3="こんばんわ。私はGoogle Homeです。ななみによって、私はカスタムされました。夕食の薬は飲みましたか？何か困ったことがあったらOK Googleと言って私に話しかけてください。未来の私たち。恐れず勇気をたずさえて取り組みましょう。"
 
-text3="こんばんわ。私はGoogle Homeです。ななみによって、私はカスタムされました。夕食の薬は飲みましたか？何か困ったことがあったらOK Googleと言って私に話しかけてください"
+text4="恐ることはありません。勇気をもって毎日に感謝して取り組みましょう。"
 
 googlehome.ip(ip, language);
 googlehome.device(deviceName,language);
