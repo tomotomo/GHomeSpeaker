@@ -14,9 +14,9 @@ require('date-utils');
 
 text1="おはようございます。おばあちゃま。私はGoogle Homeです。何か困ったことがあったらOK Googleと言って私に話しかけてください。それではどうぞ良い一日を"
 
-text2="こんにちは。私はGoogle Homeです。お昼の薬はのみましたか？何か困ったことがあったらOK Googleと言って私に話しかけてください。おそれることはありません。勇気をもって取り組みましょう。おじいちゃまは私たちみんな極楽浄土から見守ってくれています。"
+text2="こんにちは。私はGoogle Homeです。お昼の薬はのみましたか？美味しいお昼ご飯をお食事ください。何か困ったことがあったらOK Googleと言って私に話しかけてください。"
 
-text3="こんばんわ。私はGoogle Homeです。ななみによって、私はカスタムされました。夕食の薬は飲みましたか？何か困ったことがあったらOK Googleと言って私に話しかけてください。未来の私たち。恐れず勇気をたずさえて取り組みましょう。"
+text3="こんばんわ。私はGoogle Homeです。ななみによって、私はカスタムされました。夕食の薬は飲みましたか？たまには外にお出かけしてはいかがでしょうか？何か困ったことがあったらOK Googleと言って私に話しかけてください。"
 
 text4="恐ることはありません。勇気をもって毎日に感謝して取り組みましょう。"
 
@@ -43,9 +43,9 @@ if ( time == eventtime ) {
                             console.log(time+'No Hit!');}
                                 }
 
-setInterval(function(){timer(1000,text1)},5000);
-setInterval(function(){timer(1230,text2)},5000);
-setInterval(function(){timer(1830,text3)},5000);
+setInterval(function(){timer(1000,text1)},20000);
+setInterval(function(){timer(1230,text2)},20000);
+setInterval(function(){timer(1830,text3)},20000);
 
 
 //次回はイベントの発動時刻とイベント文面を引数で渡せるようにする。
