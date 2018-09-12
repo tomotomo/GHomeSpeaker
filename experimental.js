@@ -37,15 +37,16 @@ if ( time == eventtime ) {
             googlehome.notify(text, function(notifyRes) {
                     console.log(notifyRes);
                     console.log(time+'Hit!')
-                    sleep.sleep(20)
+                    sleep.sleep(30)
                         })
                         } else { 
                             console.log(time+'No Hit!');}
                                 }
 
-setInterval(function(){timer(1000,text1)},20000);
-setInterval(function(){timer(1230,text2)},20000);
-setInterval(function(){timer(1830,text3)},20000);
+setInterval(function(){timer(1000,text1)},25000);
+setInterval(function(){timer(1230,text2)},25000);
+setInterval(function(){timer(1830,text3)},25000);
+setInterval(function(){timer(1830,text4)},25000);
 
 
 //次回はイベントの発動時刻とイベント文面を引数で渡せるようにする。
