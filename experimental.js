@@ -43,9 +43,9 @@ if ( time == eventtime ) {
                             console.log(time+'No Hit!');}
                                 }
 
-setInterval(function(){timer(1000,text1)},20000);
-setInterval(function(){timer(1230,text2)},20000);
-setInterval(function(){timer(1830,text3)},20000);
+setInterval(function(){timer(1000,text1)},15000);
+setInterval(function(){timer(1230,text2)},15000);
+setInterval(function(){timer(1830,text3)},15000);
 
 
 //次回はイベントの発動時刻とイベント文面を引数で渡せるようにする。
