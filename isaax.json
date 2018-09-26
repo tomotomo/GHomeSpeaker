@@ -1,13 +1,13 @@
 {
   "name": "nodejs-app",
   "version": "Nothing test",
-  "description": "python - raspberry-pi",
-  "main": "examples/test.py",
+  "description": "Raspberry Pi and Google Home",
+  "main": "experimental-iotlt.js",
   "author": "",
   "language":"nodejs",
   "license": "",
   "scripts": {
-     "start": "sudo node experimental-iotlt.js"
+     "start": "sudo npm i && sudo node experimental-iotlt.js"
     }
 }
 
