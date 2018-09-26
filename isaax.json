@@ -7,7 +7,7 @@
   "language":"nodejs",
   "license": "",
   "scripts": {
-     "start": "sudo node experimental.js"
+     "start": "sudo node experimental-iotlt.js"
     }
 }
 
