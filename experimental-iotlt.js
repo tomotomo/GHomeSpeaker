@@ -5,6 +5,8 @@ require('date-utils');
 var language = 'ja'; // ここに日本語を表す ja を設定
 var ip = process.env.GHOME_IP || '192.168.8.152'
 
+console.log('Run app.')
+
 // ネットワーク内からGoogle Homeを見つけてくれる
 // googlehome.device('mini on room', language); 
 // もし Google Home のIPアドレスを指定するなら、以下のスクリプトに置き換える
